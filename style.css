@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #a8a0f1;
+    font-family: 'Golos Text', sans-serif;
+
+}
+#container{
+    height: 560px;
+    width: 400px;
+    background: #1a0438;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    padding: 20px;
+}
+.main-heading{
+    color: white;
+    margin-top:30px ;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.total-input p{
+    color:white;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.total-input input{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    padding: 0 20px;
+    background: #781bfa;
+    
+}
+.total-input input:focus{
+    outline: none;
+}
+.total-input input::-webkit-input-placeholder{
+    color: white;
+    font-size: 17px;
+    opacity: 0.5;
+}
+
+.total-tip p{
+    color:white;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.total-tip input{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    padding: 0 20px;
+    background: #781bfa;
+    
+}
+.total-tip input:focus{
+    outline: none;
+}
+.total-tip input::-webkit-input-placeholder{
+    color: white;
+    font-size: 17px;
+    opacity: 0.5;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.person-add-or-minus p{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin: 0 10px;
+}
+.incrementor-and-decrementor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.incrementor-and-decrementor button{
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+}
+.total-output{
+    color:white;
+}
+.total-output p{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
