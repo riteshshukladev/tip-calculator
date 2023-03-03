@@ -39,7 +39,8 @@ body{
     border: none;
     padding: 0 20px;
     background: #781bfa;
-    
+    color: white;
+    font-size: 17px;
 }
 .total-input input:focus{
     outline: none;
@@ -63,7 +64,8 @@ body{
     border: none;
     padding: 0 20px;
     background: #781bfa;
-    
+    color: white;
+    font-size: 17px;
 }
 .total-tip input:focus{
     outline: none;
