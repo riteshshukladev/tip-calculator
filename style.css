@@ -100,6 +100,10 @@ footer{
     border: none;
     cursor: pointer;
 }
+.incrementor-and-decrementor button:hover{
+    background: #c7a4f8;
+    transition: 0.4s;
+}
 .total-output{
     color:white;
 }
