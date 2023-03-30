@@ -1,44 +1,38 @@
-let bill_in_total = document.getElementById("bill-in-total");
-let bill_in_tip = document.getElementById("Tip-in-total");
-let total_person= document.getElementsByClassName("total-person");
-let total_share = document.getElementsByClassName("total-share");  
+var total_share=document.querySelector(".total-share");
 
-let total_person_value = Number.parseInt(total_person.innerText);
+var bill_in_total=document.querySelector("#bill-in-total");
 
-// Number.parseInt(total_person.value);
-// Number.parseInt(total_share.value);
+var tip_in_total=document.querySelector("#Tip-in-total");
 
+var total_person=document.querySelector(".total-person");
 
-const CalculateBill = () => {
+var number_of_people=Number(total_person.innerText);
 
-    const bill=Number(bill_in_total.value);
-    const tip_percent=(bill_in_tip.value)/100;
-
-    const tip_amount=bill*tip_percent;
-    console.log(tip_amount);
-    const total_bill=bill+tip_amount;
-    console.log(total_bill);
-    const per_person_total=total_bill/total_person_value;
-
-    total_share.innerText=`$${per_person_total}`;
-}
-const plus_function = () => {
-    total_person.value++;
-    total_person.innerText=total_person.value;
-    CalculateBill();
-}
-const minus_function = () => {
-    if(total_person.value<=1){
-        return;
-    }
-    else
-    total_person.value--;
-    total_person.innerText=total_person.value;
-    CalculateBill();
+function CalculateBill(){
+    const bill= Number(bill_in_total.value);
     
+
+    const tip= Number(tip_in_total.value)/100;
+   
+    const tip_amount= bill*tip;
+    
+    const total_bill_amount= bill+tip_amount;
+    
+  const total_share_amount_per_person= total_bill_amount/number_of_people;
+   
+    total_share.innerText=`$ ${total_share_amount_per_person.toFixed(2)}`;
+
 }
 
-
-const heading = document.getElementsByClassName('.Main');
-heading.innerText="Tip Calcula";
-heading.style.color="red";
+function plus_function(){
+    number_of_people++;
+    total_person.innerText=number_of_people;
+    CalculateBill();
+}
+function minus_function(){
+    if(number_of_people>1){
+        number_of_people--;
+        total_person.innerText=number_of_people;
+        CalculateBill();
+    }
+}

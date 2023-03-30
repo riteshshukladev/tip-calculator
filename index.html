@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tip Calculator</title>
-    
+    <title>Tip Calculator</title> 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&display=swap');
-        </style>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-
+    </style>
+    <!--  -->
 </head>
 <body>
-    
     <div id="container">
         <header>
             <div class="main-heading">
@@ -26,13 +25,15 @@
         <main>
             <div class="total-input">
                 <p>bill total:</p>
-                <input type="text" name="" id="bill-in-total" placeholder="Enter total bill" oninput="CalculateBil()">
+                <input type="text" name="" id="bill-in-total" placeholder="Enter total bill" oninput="CalculateBill()">
             </div>
             <!-- Tip input area -->
             <div class="total-tip">
                 <p>Tip:</p>
-                <input type="text" name="" id="Tip-in-total" placeholder="Enter Tip" oninput="CalculateBill()">
+                <input type="text" name="" id="Tip-in-total" placeholder="Enter Tip in percentage" 
+                oninput="CalculateBill()">
             </div>
+          
         </main>
         <!--  -->
         <footer>
@@ -46,13 +47,12 @@
             </div>
             <div class="total-output">
                 <p>Total per Person</p>
-                <h2 class="total-share">0.00</h2>
+                <h2 class="total-share">$ 0.00</h2>
             </div>
         </footer>
     </div>
-
-
-    <!-- Scripts -->
-        <script src="script.js"></script>
+  
+    <!-- scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
